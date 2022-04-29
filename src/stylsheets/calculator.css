@@ -1,0 +1,90 @@
+.calculator{
+    margin: auto;
+    width: 30%;
+    height: 100%;
+    background-color: #444b;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 15px;
+}
+.input{
+    height: 15%;
+    width: 100%;
+    padding: 10px;
+}
+input[type="text"]{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: #fff;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px;
+}
+.buttons{
+    width: 100%;
+    height: 85%;
+    display: grid;
+    padding: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+input[type="button"]{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+input[type="button"]:hover{
+    font-size: 40px;
+}
+.f-row:hover{
+    box-shadow: 0 0 10px #ae3dff, 0 0 20px #ae3dff;
+    text-shadow: 0 0 5px #ae3dff, 0 0 20px #ae3dff;
+    color: #ae3dff;
+}
+.s-row:hover{
+    box-shadow: 0 0 10px #55ffe2, 0 0 20px #55ffe2;
+    text-shadow: 0 0 5px #55ffe2, 0 0 20px #55ffe2;
+    color: #55ffe2;
+}
+.t-row:hover{
+    box-shadow: 0 0 10px #ff3b93, 0 0 20px #ff3b93;
+    text-shadow: 0 0 5px #ff3b93, 0 0 20px #ff3b93;
+    color: #ff3b93;
+}
+.c-row:hover{
+    box-shadow: 0 0 10px #a7fd2a, 0 0 20px #a7fd2a;
+    text-shadow: 0 0 5px #a7fd2a, 0 0 20px #a7fd2a;
+    color: #a7fd2a;
+}
+.clear{
+    grid-column: 1/ 5;
+}
+.clear:hover{
+    box-shadow: 0 0 10px #f3f315, 0 0 20px #f3f315;
+    text-shadow: 0 0 5px #f3f315, 0 0 20px #f3f315;
+    color: #f3f315;
+}
