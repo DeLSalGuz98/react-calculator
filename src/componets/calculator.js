@@ -16,8 +16,15 @@ export function Calculator(props) {
             setVal('');
         }else{
             setVal(valInput+val);
+            Calculate(val);
         }
         
+    }
+    const Calculate = (val)=>{
+        if(val === "="){
+            let result = eval(valInput);
+            setVal(result)
+        }
     }
     return(
         <>
